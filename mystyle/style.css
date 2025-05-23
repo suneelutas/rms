@@ -7,8 +7,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: 
-        linear-gradient(135deg, rgba(102, 126, 234, 0.7) 0%, rgba(118, 75, 162, 0.7) 100%),
-        url('https://www.utas.edu.om/portals/6/Images/sliders/msld-shinas-main-building-option3.jpg') center/cover no-repeat;
+        linear-gradient(135deg, rgb(143 200 255 / 20%) 0%, rgb(223 218 228 / 10%) 100%),
+        url('../images/bg_image.jpg') center/cover no-repeat;
     min-height: 100vh;
     color: white;
     display: flex;
@@ -24,8 +24,8 @@ body {
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(20px);
     padding: 50px 40px;
     border-radius: 20px;
     max-width: 900px;
