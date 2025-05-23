@@ -8,7 +8,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: 
         linear-gradient(135deg, rgb(143 200 255 / 20%) 0%, rgb(223 218 228 / 10%) 100%),
-        url('../images/bg_image.jpg') center/cover no-repeat;
+        url('../images/bg_image.jpg');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
     color: white;
     display: flex;
@@ -287,6 +291,11 @@ h1 {
 
 /* Tablets */
 @media screen and (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    
     .container {
         max-width: 95vw;
         padding: 6vw 5vw;
@@ -323,6 +332,11 @@ h1 {
 
 /* Mobile phones */
 @media screen and (max-width: 480px) {
+    body {
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    
     .main-content {
         padding: 3vw;
     }
