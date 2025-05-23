@@ -30,7 +30,7 @@ body {
 .container {
     background: rgba(255, 255, 255, 0.50);
     backdrop-filter: blur(20px);
-    padding: clamp(30px, 5vw, 60px) clamp(25px, 4vw, 50px);
+    padding: clamp(25px, 4vw, 50px) clamp(20px, 3vw, 40px);
     border-radius: clamp(15px, 2vw, 25px);
     max-width: min(95vw, 1000px);
     width: 100%;
@@ -209,7 +209,7 @@ h1 {
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
     .container {
         max-width: 85vw;
-        padding: 4vw 3.5vw;
+        padding: 45px 40px;
     }
     
     h1 {
@@ -229,7 +229,7 @@ h1 {
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
     .container {
         max-width: 88vw;
-        padding: 4.5vw 4vw;
+        padding: 35px 30px;
     }
     
     .columns {
@@ -259,7 +259,7 @@ h1 {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .container {
         max-width: 92vw;
-        padding: 5vw 4.5vw;
+        padding: 30px 25px;
     }
     
     .columns {
@@ -298,7 +298,7 @@ h1 {
     
     .container {
         max-width: 95vw;
-        padding: 6vw 5vw;
+        padding: 25px 20px;
         margin: 2vw;
     }
     
@@ -343,7 +343,7 @@ h1 {
     
     .container {
         max-width: 96vw;
-        padding: 8vw 6vw;
+        padding: 20px 15px;
         margin: 2vw;
         border-radius: 4vw;
     }
