@@ -26,7 +26,7 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: 
         linear-gradient(135deg, rgb(255 155 69 / 20%) 0%, rgb(250 273 202/ 10%) 100%),
-        url('/lclhome/tnaya002/Desktop/personal/portfolio/rms/images/bg_image.jpg') center/cover no-repeat;
+        url('../images/bg_image.jpg') center/cover no-repeat;
     min-height: 100vh;
     color: var(--text-dark);
     display: flex;
