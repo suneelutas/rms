@@ -200,6 +200,10 @@ body {
     background: linear-gradient(135deg, var(--accent-orange), #ea580c);
 }
 
+.form-card:nth-child(7) {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
 .footer {
     background: rgba(44, 62, 80, 0.9);
     backdrop-filter: blur(10px);
