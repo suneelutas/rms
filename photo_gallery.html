@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Research and Consultancy Department - UTAS Shinas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="header-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="UTAS Shinas Logo">
+            </div>
+            <div class="nav-text">
+                <h1>University of Technology and Applied Sciences - Shinas</h1>
+                <p>Research and Consultancy Department</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <button class="navbar-toggle" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="reports.html" class="dropdown-toggle">Reports <i class="bi bi-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="reports.html#project-details">Project Details</a></li>
+                        <li><a href="reports.html#publication">Publication</a></li>
+                        <li><a href="reports.html#resources">Resources</a></li>
+                    </ul>
+                </li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="project_reports.html">Project Reports</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="photo_gallery.html" class="active">Photo Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content page-content">
+        <div class="container">
+            <div class="page-header">
+                <h2>Photo Gallery</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <!-- Photo Carousel -->
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="images/lab-equipment.jpg" alt="Advanced Laboratory Equipment">
+                        <img src="images/research-team.jpg" alt="Research Team Collaboration">
+                        <img src="images/data-analysis.jpg" alt="Data Analysis Session">
+                        <img src="images/lab-work.jpg" alt="Laboratory Experiment">
+                        <img src="images/conference.jpg" alt="Research Conference">
+                        <img src="images/field-research.jpg" alt="Field Research">
+                    </div>
+                </div>
+                
+                <button class="carousel-prev" aria-label="Previous slide">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button class="carousel-next" aria-label="Next slide">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+                
+                <div class="carousel-indicators">
+                    <button class="carousel-indicator active" aria-label="Go to slide 1"></button>
+                    <button class="carousel-indicator" aria-label="Go to slide 2"></button>
+                    <button class="carousel-indicator" aria-label="Go to slide 3"></button>
+                    <button class="carousel-indicator" aria-label="Go to slide 4"></button>
+                    <button class="carousel-indicator" aria-label="Go to slide 5"></button>
+                    <button class="carousel-indicator" aria-label="Go to slide 6"></button>
+                </div>
+            </div>
+            
+            <!-- Gallery with Captions -->
+            <div class="gallery-section">
+                <h3>Research in Action</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="images/lab-equipment.jpg" alt="Advanced Laboratory Equipment">
+                        </div>
+                        <div class="gallery-caption">
+                            <h4>Advanced Laboratory Equipment</h4>
+                            <p>State-of-the-art analytical equipment in our Materials Science Laboratory, enabling precise measurements and analysis for various research projects.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="images/research-team.jpg" alt="Research Team Collaboration">
+                        </div>
+                        <div class="gallery-caption">
+                            <h4>Research Team Collaboration</h4>
+                            <p>Our multidisciplinary research team collaborating on a sustainable energy project, combining expertise from engineering, environmental science, and economics.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="images/data-analysis.jpg" alt="Data Analysis Session">
+                        </div>
+                        <div class="gallery-caption">
+                            <h4>Data Analysis Session</h4>
+                            <p>Researchers analyzing complex datasets using specialized software tools to extract meaningful insights and patterns from experimental results.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="images/lab-work.jpg" alt="Laboratory Experiment">
+                        </div>
+                        <div class="gallery-caption">
+                            <h4>Laboratory Experiment</h4>
+                            <p>A researcher conducting a controlled experiment in our chemistry laboratory, testing innovative catalysts for industrial applications.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="images/conference.jpg" alt="Research Conference">
+                        </div>
+                        <div class="gallery-caption">
+                            <h4>Research Conference</h4>
+                            <p>Faculty members presenting research findings at the International Conference on Sustainable Technology hosted by UTAS Shinas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="images/field-research.jpg" alt="Field Research">
+                        </div>
+                        <div class="gallery-caption">
+                            <h4>Field Research</h4>
+                            <p>Environmental researchers collecting field samples as part of an ongoing ecological study in the coastal regions of Oman.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Contact</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <a href="mailto:suneel.kumar@utas.edu.om">suneel.kumar@utas.edu.om</a>
+                </div>
+                <div class="contact-item">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    <span>UTAS - Shinas Campus</span>
+                </div>
+            </div>
+            <div class="university-info">
+                <p>University of Technology and Applied Sciences, Shinas, Sultanate of Oman</p>
+                <p>Empowering Research and Innovation</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

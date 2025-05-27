@@ -1,0 +1,390 @@
+/* UTAS Shinas Research Department Stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-blue: #1e40af;
+    --secondary-blue: #ffffff;
+    --accent-orange: #f97316;
+    --dark-blue: #1e3a8a;
+    --light-gray: #f8fafc;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --white: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --glass-bg: rgba(255, 255, 255, 0.9);
+    --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: 
+        linear-gradient(135deg, rgb(255 155 69 / 20%) 0%, rgb(250 273 202/ 10%) 100%),
+        url('../images/bg_image.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+.header-nav {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo {
+    width: 140px;
+    height: 60px;
+    background: var(--white);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px var(--shadow);
+    flex-shrink: 0;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+.nav-text {
+    flex: 1;
+}
+
+.nav-text h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+    margin-bottom: 0.25rem;
+}
+
+.nav-text p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.reports-section {
+            font-family: 'Inter', sans-serif;
+}
+
+.report-heading {
+    color: Blue;
+    margin-top: 0;
+}
+
+.report-list {
+    margin-left: 20px;
+}
+
+.report-link {
+    color: white;
+    text-decoration: underline;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(20px);
+    padding: 3rem 2.5rem;
+    border-radius: 24px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 
+        0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.container-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 0.75rem;
+}
+
+.container-header p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    font-weight: 400;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.form-card {
+    background: linear-gradient(135deg, var(--secondary-blue), var(--primary-blue));
+    padding: 1.75rem 1.5rem;
+    border-radius: 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.form-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.form-card:hover::before {
+    left: 100%;
+}
+
+.form-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.form-card a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.05rem;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.form-card:nth-child(1) {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.form-card:nth-child(2) {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.form-card:nth-child(3) {
+    background: linear-gradient(135deg, var(--accent-orange), #ea580c);
+}
+
+.form-card:nth-child(4) {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.form-card:nth-child(5) {
+    background: linear-gradient(135deg, #06b6d4, #0891b2);
+}
+.form-card:nth-child(6) {
+    background: linear-gradient(135deg, var(--accent-orange), #ea580c);
+}
+.form-card:nth-child(7) {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+.form-card:nth-child(8) {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+.form-card:nth-child(9) {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.footer {
+    background: rgba(44, 62, 80, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer h3 {
+    color: #ecf0f1;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #bdc3c7;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.contact-item a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #5dade2;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+.university-info {
+    color: #95a5a6;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.university-info p:first-child {
+    font-weight: 500;
+    color: #ecf0f1;
+    margin-bottom: 0.25rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-container {
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+
+    .logo {
+        width: 100px;
+        height: 50px;
+    }
+
+    .nav-text h1 {
+        font-size: 1.25rem;
+    }
+
+    .nav-text p {
+        font-size: 0.85rem;
+    }
+
+    .container {
+        padding: 2rem 1.5rem;
+        margin: 0 0.5rem;
+    }
+    
+    .container-header h2 {
+        font-size: 1.75rem;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .footer {
+        padding: 20px 15px;
+    }
+
+    .main-content {
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .form-card {
+        padding: 1.5rem 1.25rem;
+    }
+    
+    .form-card a {
+        font-size: 1rem;
+    }
+
+    .main-content {
+        padding: 1.5rem 0.75rem;
+    }
+}
+
+/* Animation for smooth loading */
+.container {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Focus states for accessibility */
+.form-card:focus-within {
+    outline: 2px solid var(--accent-orange);
+    outline-offset: 2px;
+}
+
+.contact-item a:focus {
+    outline: 2px solid var(--accent-orange);
+    outline-offset: 2px;
+    border-radius: 4px;
+}

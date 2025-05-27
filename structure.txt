@@ -1,0 +1,7 @@
+rms/
+├── index.html
+├── css/
+│   └── style.css
+└── images/
+    ├── logo.jpeg
+    └── bg_image.jpg
