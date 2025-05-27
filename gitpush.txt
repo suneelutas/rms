@@ -1,0 +1,17 @@
+# Add the remote repository
+git remote add origin https://github.com/suneelutas/rms.git
+
+# Verify the remote has been added correctly
+git remote -v
+
+# Stage your changes
+git add .
+
+# Commit your changes
+git commit -m "initial commit"
+
+# Check your current branch
+git branch -v
+
+# Push changes (assuming your current branch is 'main' or 'master')
+git push -u origin main
