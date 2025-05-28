@@ -193,23 +193,18 @@ body {
     z-index: 1;
     text-align: center;
 }
-
 .form-card:nth-child(1) {
     background: linear-gradient(135deg, #ef4444, #dc2626);
 }
-
 .form-card:nth-child(2) {
     background: linear-gradient(135deg, #10b981, #059669);
 }
-
 .form-card:nth-child(3) {
     background: linear-gradient(135deg, var(--accent-orange), #ea580c);
 }
-
 .form-card:nth-child(4) {
     background: linear-gradient(135deg, #8b5cf6, #7c3aed);
 }
-
 .form-card:nth-child(5) {
     background: linear-gradient(135deg, #06b6d4, #0891b2);
 }
@@ -224,6 +219,9 @@ body {
 }
 .form-card:nth-child(9) {
     background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+.form-card:nth-child(10) {
+    background: linear-gradient(135deg, #06b6d4, #0891b2);
 }
 
 .footer {
